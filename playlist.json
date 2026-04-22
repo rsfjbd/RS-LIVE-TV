@@ -5,9 +5,19 @@
     "url": "https://rs-player.netlify.app/jw-player?url=https://bestiptv.bestiptv-pro.workers.dev/?url=http://flussonic.deltainfonet.com/02_TSPORTS/tracks-v1a1/mono.m3u8"
   },
   {
+    "name": "Star Sports 1",
+    "image": "https://i.postimg.cc/X7jJhqPw/20241005-170805.png",
+    "url": "https://taimoor.pro.bd/live/otvs/playex.php?id=167575"
+  },
+  {
     "name": "A Sports",
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLWQ8RZyUbkyQmobT7TNMiqZ7YsSy1m0I-R2t21XZ2PA&s=10",
     "url": "https://taimoor.pro.bd/live/otvs/playex.php?id=221417"
+  },
+  {
+    "name": "PTV Sports",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/PTV_Sports.png/250px-PTV_Sports.png",
+    "url": "https://taimoor.pro.bd/live/otvs/playex.php?id=167567"
   },
   {
     "name": "Tsports",
