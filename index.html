@@ -8,7 +8,7 @@
     <link href="bootstrap.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
     <style>
-        /* প্লেয়ার এরিয়া এবং সাদা দাগ ফিক্স */
+        /* প্লেয়ার এরিয়া এবং ফুলস্ক্রিন ফিক্স */
         .tv-view .embed-responsive {
             border: 1px solid #222;
             border-radius: 8px;
@@ -48,19 +48,20 @@
             font-size: 12px;
         }
 
-        /* নোটিশের ভেতর হলুদ কালার ফিক্স */
+        /* নোটিশের ভেতর হলুদ কালার হাইলাইট */
         .highlight-yellow {
             color: #ffff00;
             font-weight: bold;
         }
 
-        /* ফুটার এবং চিকন টেলিগ্রাম কার্ড */
+        /* ফুটার এরিয়া */
         .footer-premium {
             background: #0a0a0a;
             padding: 20px 0;
             text-align: center;
         }
 
+        /* চিকন টেলিগ্রাম কার্ড */
         .tg-card {
             background: #161616;
             padding: 15px;
@@ -68,7 +69,7 @@
             border: 1px solid #222;
             display: inline-block;
             width: 92%;
-            max-width: 360px; /* কার্ড চিকন রাখা হয়েছে */
+            max-width: 360px;
             margin: 15px auto;
         }
 
@@ -86,23 +87,123 @@
             font-style: italic;
         }
 
-        /* RS TV ব্যানার */
-        .rs-banner-box {
+        /* --- আপনার দেওয়া নতুন ব্যানার স্টাইল --- */
+        .tio-style-banner-fixed {
             width: 92%;
-            max-width: 360px;
-            height: 55px;
+            max-width: 320px;
+            height: 50px;
             background: url('https://img.freepik.com/free-vector/abstract-dark-blue-futuristic-digital-background_1017-23842.jpg') center/cover;
-            margin: 10px auto;
-            border-radius: 10px;
             position: relative;
+            overflow: hidden;
+            border-radius: 6px;
+            border: 1px solid #333;
+            font-family: 'Segoe UI', Roboto, sans-serif;
             display: flex;
             align-items: center;
-            padding: 0 10px;
-            border: 1px solid #333;
+            margin: 10px auto;
         }
 
-        .brand-name { font-weight: 900; font-size: 15px; color: white; font-style: italic; }
-        .brand-name span { color: #ff9100; }
+        .banner-overlay {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: linear-gradient(90deg, rgba(0,0,0,0.85) 0%, rgba(0,210,255,0.1) 100%);
+            z-index: 1;
+        }
+
+        .content-wrapper {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            padding: 0 8px;
+            justify-content: space-between;
+        }
+
+        .live-circle {
+            background: #ff0000;
+            color: white;
+            font-size: 8px;
+            font-weight: bold;
+            padding: 2px 6px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+            flex-shrink: 0;
+        }
+
+        .pulse {
+            width: 5px;
+            height: 5px;
+            background: white;
+            border-radius: 50%;
+            animation: pulse-animation 1s infinite;
+        }
+
+        .text-section-fixed {
+            flex-grow: 1;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 2px;
+        }
+
+        .main-tags {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            font-size: 8px; /* মোবাইলের জন্য সামান্য ছোট করা হয়েছে */
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+
+        .tag-cricket { color: #FFD700; } 
+        .tag-football { color: #00FF00; } 
+        .tag-tv { color: #00D2FF; }      
+
+        .sub-text {
+            font-size: 9px;
+            color: #ffffff;
+            margin: 0;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            text-shadow: 1px 1px 2px #000;
+        }
+
+        .brand-logo-fixed {
+            font-weight: 900;
+            font-size: 14px;
+            font-style: italic;
+            flex-shrink: 0;
+        }
+
+        .tio { color: #fff; }
+        .tv { color: #ff9100; text-shadow: 0 0 5px #ff9100; }
+
+        .tio-style-banner-fixed::after {
+            content: '';
+            position: absolute;
+            top: 0; left: -100%;
+            width: 40%; height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+            animation: shine 3s infinite;
+            z-index: 3;
+        }
+
+        @keyframes shine {
+            0% { left: -100%; }
+            100% { left: 200%; }
+        }
+
+        @keyframes pulse-animation {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7); }
+            70% { transform: scale(1); box-shadow: 0 0 0 5px rgba(255, 255, 255, 0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(255, 255, 255, 0); }
+        }
 
         /* Adsterra অ্যাড বক্স */
         .ad-box {
@@ -112,7 +213,6 @@
             min-height: 50px;
             display: flex;
             justify-content: center;
-            overflow: hidden;
         }
 
         .copyright { color: #444; font-size: 11px; margin-top: 15px; }
@@ -145,14 +245,26 @@
     <footer class="footer-premium">
         <div class="container">
             
-            <div class="rs-banner-box">
-                <div style="position: relative; z-index: 2; display: flex; align-items: center; width: 100%; justify-content: space-between;">
-                    <div style="background: red; color: white; font-size: 9px; padding: 1px 6px; border-radius: 8px;">● LIVE</div>
-                    <div style="color:white; font-size: 10px; font-weight: bold; line-height: 1.2;">
-                        <span style="color:#FFD700">CRICKET 🏏</span> | <span style="color:#00FF00">FOOTBALL ⚽</span><br>
-                        সব পাবেন একদম ফ্রিতে!
+            <div class="tio-style-banner-fixed">
+                <div class="banner-overlay"></div>
+                <div class="content-wrapper">
+                    <div class="live-circle">
+                        <span class="pulse"></span>
+                        LIVE
                     </div>
-                    <div class="brand-name">RS<span>TV</span></div>
+
+                    <div class="text-section-fixed">
+                        <div class="main-tags">
+                            <span class="tag-cricket">CRICKET 🏏</span>
+                            <span class="tag-football">FOOTBALL ⚽</span>
+                            <span class="tag-tv">TV SHOWS 📺</span>
+                        </div>
+                        <p class="sub-text">সব পাবেন একদম ফ্রিতে!</p>
+                    </div>
+
+                    <div class="brand-logo-fixed">
+                        <span class="tio">RS</span><span class="tv">TV</span>
+                    </div>
                 </div>
             </div>
 
@@ -163,16 +275,16 @@
             </div>
 
             <div class="ad-box">
-                <script type="text/javascript">
-                    atOptions = {
-                        'key' : 'YOUR_ADSTERRA_KEY_HERE',
-                        'format' : 'iframe',
-                        'height' : 50,
-                        'width' : 320,
-                        'params' : {}
-                    };
-                    document.write('<scr' + 'ipt type="text/javascript" src="//www.topcreativeformat.com/YOUR_ADSTERRA_KEY/invoke.js"></scr' + 'ipt>');
+                <script>
+                  atOptions = {
+                    'key' : '774c0e371455f6476668178b5faae5ab',
+                    'format' : 'iframe',
+                    'height' : 50,
+                    'width' : 320,
+                    'params' : {}
+                  };
                 </script>
+                <script src="https://www.highperformanceformat.com/774c0e371455f6476668178b5faae5ab/invoke.js"></script>
             </div>
 
             <div class="copyright">© 2026 RS LIVE TV | All Rights Reserved</div>
