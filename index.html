@@ -8,7 +8,7 @@
     <link href="bootstrap.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
     <style>
-        /* ফুলস্ক্রিন সাদা দাগ দূর করার চূড়ান্ত ফিক্স */
+        /* ফুলস্ক্রিন সাদা দাগ দূর করার ফিক্স */
         .tv-view .embed-responsive {
             border: 1px solid #222;
             border-radius: 8px;
@@ -27,26 +27,132 @@
             background: #000 !important;
         }
 
-        iframe {
-            border: 0 !important;
-            outline: none !important;
-            display: block;
+        iframe { border: 0 !important; outline: none !important; display: block; }
+
+        /* নোটিশ বার স্টাইল */
+        .marquee-container {
+            background: #121212;
+            color: #ffffff;
+            padding: 8px 0;
+            display: flex;
+            align-items: center;
+            border-top: 1px solid #333;
+            border-bottom: 1px solid #333;
         }
 
-        /* নোটিশ এবং ব্যানার স্টাইল আগের মতোই থাকবে */
-        .marquee-container { background: #121212; color: #fff; padding: 8px 0; display: flex; align-items: center; border-top: 1px solid #333; }
-        .notice-label { background: #ff4444; color: #fff; padding: 2px 12px; margin-left: 10px; border-radius: 4px; font-weight: bold; font-size: 12px; }
-        .footer-premium { background: #0a0a0a; padding: 30px 0; text-align: center; }
-        .tg-card { background: #161616; padding: 12px 20px; border-radius: 12px; border: 1px solid #222; display: inline-block; width: 95%; max-width: 400px; }
-        .telegram-btn { display: inline-block; background: #0088cc; color: #fff !important; padding: 6px 20px; border-radius: 6px; font-weight: bold; text-decoration: none; font-size: 13px; }
-        
-        /* RS TV ব্যানার */
-        .tio-style-banner-fixed { width: 320px; height: 50px; background: url('https://img.freepik.com/free-vector/abstract-dark-blue-futuristic-digital-background_1017-23842.jpg') center/cover; position: relative; overflow: hidden; border-radius: 6px; display: flex; align-items: center; margin: 0 auto 15px auto; }
-        .banner-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(90deg, rgba(0,0,0,0.85) 0%, rgba(0,210,255,0.1) 100%); z-index: 1; }
-        .content-wrapper { position: relative; z-index: 2; display: flex; align-items: center; width: 100%; padding: 0 8px; justify-content: space-between; }
-        .live-circle { background: #ff0000; color: white; font-size: 8px; padding: 2px 6px; border-radius: 12px; display: flex; align-items: center; gap: 4px; }
-        .brand-logo { font-weight: 900; font-size: 14px; color: #fff; }
-        .brand-logo .tv { color: #ff9100; }
+        .notice-label {
+            background: #ff4444; 
+            color: #fff;
+            padding: 2px 12px;
+            margin-left: 10px;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 12px;
+            white-space: nowrap;
+        }
+
+        /* ফুটার এবং কার্ড স্টাইল */
+        .footer-premium {
+            background: #0a0a0a;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        .tg-card {
+            background: #161616;
+            padding: 20px;
+            border-radius: 15px;
+            border: 1px solid #222;
+            display: inline-block;
+            width: 90%;
+            max-width: 400px;
+            margin: 20px auto;
+        }
+
+        .telegram-btn {
+            display: inline-block;
+            background: #0088cc;
+            color: #fff !important;
+            padding: 10px 25px;
+            border-radius: 8px;
+            font-weight: bold;
+            text-decoration: none !important;
+            margin-top: 15px;
+            font-size: 14px;
+            font-family: 'Courier New', Courier, monospace;
+            font-style: italic;
+        }
+
+        /* ব্যানার স্টাইল */
+        .rs-banner-box {
+            width: 90%;
+            max-width: 380px;
+            height: 60px;
+            background: url('https://img.freepik.com/free-vector/abstract-dark-blue-futuristic-digital-background_1017-23842.jpg') center/cover;
+            margin: 20px auto;
+            border-radius: 8px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            padding: 0 15px;
+            overflow: hidden;
+            border: 1px solid #333;
+        }
+
+        .banner-overlay {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        .banner-content {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        .live-tag {
+            background: red;
+            color: white;
+            font-size: 10px;
+            font-weight: bold;
+            padding: 2px 8px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .banner-text {
+            color: white;
+            font-size: 11px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .brand-name {
+            font-weight: 900;
+            font-size: 16px;
+            color: white;
+            font-style: italic;
+        }
+        .brand-name span { color: #ff9100; }
+
+        /* বিজ্ঞাপন ইউনিট */
+        .ad-box {
+            margin: 20px auto;
+            display: flex;
+            justify-content: center;
+        }
+
+        .copyright {
+            color: #555;
+            font-size: 12px;
+            margin-top: 20px;
+        }
     </style>
 </head>
 
@@ -60,30 +166,46 @@
             </div>
 
             <div class="col-xs-12 col-md-2 channel-list">
-                <ul class="thumbnail-slider" id="channel-container"></ul>
+                <ul class="thumbnail-slider" id="channel-container">
+                    </ul>
             </div>
         </div>
     </div>
 
     <div class="marquee-container">
         <div class="notice-label">NOTICE</div>
-        <marquee scrollamount="6">⚠️ বাফারিং মুক্ত স্ট্রিমিং নিশ্চিত করতে ৫-১০ সেকেন্ড ধৈর্য ধরুন। ধন্যবাদ!</marquee>
+        <marquee scrollamount="6">
+            ⚠️ বাফারিং মুক্ত স্ট্রিমিং নিশ্চিত করতে ৫-১০ সেকেন্ড ধৈর্য ধরুন। ধন্যবাদ!
+        </marquee>
     </div>
 
     <footer class="footer-premium">
         <div class="container">
-            <div class="tio-style-banner-fixed">
+            
+            <div class="rs-banner-box">
                 <div class="banner-overlay"></div>
-                <div class="content-wrapper">
-                    <div class="live-circle">LIVE</div>
-                    <div class="brand-logo">RS<span class="tv">TV</span></div>
+                <div class="banner-content">
+                    <div class="live-tag">● LIVE</div>
+                    <div class="banner-text">
+                        <span style="color:#FFD700">CRICKET 🏏</span> 
+                        <span style="color:#00FF00">FOOTBALL ⚽</span>
+                        <br>সব পাবেন একদম ফ্রিতে!
+                    </div>
+                    <div class="brand-name">RS<span>TV</span></div>
                 </div>
             </div>
+
             <div class="tg-card">
-                <h5 style="color: #fff; font-size: 15px;">সাপোর্ট প্রয়োজন?</h5>
-                <a href="https://t.me/bestiptvlive" target="_blank" class="telegram-btn"> JOIN TELEGRAM </a>
+                <h4 style="color: #fff; margin-bottom: 10px;">সাপোর্ট প্রয়োজন?</h4>
+                <p style="color: #888; font-size: 12px;">আপডেট ও চ্যানেল রিকোয়েস্টের জন্য আমাদের টেলিগ্রাম গ্রুপে যোগ দিন।</p>
+                <a href="https://t.me/bestiptvlive" target="_blank" class="telegram-btn">JOIN TELEGRAM</a>
             </div>
-            <div class="copyright" style="margin-top:20px; color:#555; font-size:12px;">© 2026 RS LIVE TV</div>
+
+            <div class="ad-box">
+                <a href="#"><img src="https://i.postimg.cc/qR8XkZ0V/adzilla.png" alt="Ad" style="max-width: 320px; border-radius: 8px;"></a>
+            </div>
+
+            <div class="copyright">© 2026 RS LIVE TV | All Rights Reserved</div>
         </div>
     </footer>
 
