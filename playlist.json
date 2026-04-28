@@ -82,12 +82,12 @@
   {
     "name": "MY TV",
     "image": "https://i.postimg.cc/0y7ppp9f/20241118-164338.png",
-    "url": "https://rs-player.netlify.app/jw-player?url=https://mytvbangla.com/0.m3u8"
+    "url": "https://rs-player.netlify.app/jw-player?url=https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/mytv-up-off.stream/tracks-v1a1/mono.m3u8"
   },
   {
     "name": "Ekushe Tv",
     "image": "https://i.postimg.cc/HLchzXGY/Ekushe.png",
-    "url": "https://rs-player.netlify.app/jw-player?url=https://ekusheyserver.com/hls-live/livepkgr/_definst_/liveevent/livestream3.m3u8"
+    "url": "https://rs-player.netlify.app/jw-player?url=https://proxyserver2.nurmd2006-official.workers.dev/?url=https://ekusheyserver.com/hls-live/livepkgr/_definst_/liveevent/livestream3.m3u8"
   },
   {
     "name": "Sananda Tv",
@@ -97,7 +97,7 @@
   {
     "name": "ZEE Bangla",
     "image": "https://i.postimg.cc/ZRjjSzFd/20250403-190441.png",
-    "url": "https://rs-player.netlify.app/jw-player?url=https://smart.bengaldigital.live/Zee-Bangla/index.m3u8"
+    "url": "https://rs-player.netlify.app/jw-player?url=https://ottbanglaplatform.com/tv/toffee/live.php?id=zee_bangla&e=.m3u8"
   },
   {
     "name": "Star Jalsha",
