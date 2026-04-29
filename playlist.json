@@ -20,6 +20,16 @@
     "url": "https://rs-player.netlify.app/jw-player?url=https://maymunmatematigi.lol/static/bs4.m3u8"
   },
   {
+    "name": "BTV",
+    "image": "https://i.postimg.cc/zDbjrxLb/Btv-HD.png",
+    "url": "https://rs-player.netlify.app/jw-player?url=https://owrcovcrpy.gpcdn.net/bpk-tv/1709/output/index.m3u8"
+  },
+  {
+    "name": "Asian Tv",
+    "image": "https://i.postimg.cc/Y9yQYM39/20260429-073054.jpg",
+    "url": "https://rs-player.netlify.app/jw-player?url=https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/asian-test-sample-ok-d.stream/tracks-v1a1/mono.m3u8"
+  },
+  {
     "name": "Atn News",
     "image": "https://i.postimg.cc/TwvMq4yd/20250602-071314.png",
     "url": "https://rs-player.netlify.app/jw-player?url=https://owrcovcrpy.gpcdn.net/bpk-tv/1706/output/index.m3u8"
@@ -48,11 +58,6 @@
     "name": "Channel 24",
     "image": "https://i.postimg.cc/qMLbtKKY/20260427-201137.jpg",
     "url": "https://rs-player.netlify.app/jw-player?url=https://owrcovcrpy.gpcdn.net/bpk-tv/1703/output/index.m3u8"
-  },
-  {
-    "name": "BTV",
-    "image": "https://i.postimg.cc/zDbjrxLb/Btv-HD.png",
-    "url": "https://rs-player.netlify.app/jw-player?url=https://owrcovcrpy.gpcdn.net/bpk-tv/1709/output/index.m3u8"
   },
   {
     "name": "Deepto Tv",
