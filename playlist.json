@@ -10,6 +10,11 @@
     "url": "https://taimoor.pro.bd/live/crichd/play.php?stream=star1in&token=4c6f084aa22cafef6ce6b7818505b28eecb410c8a19c4961454bd03802dd9aaa&exp=1777532892"
   },
   {
+    "name": "PTV Sports",
+    "image": "https://i.postimg.cc/sXpJqtm3/Ptv.png",
+    "url": "https://rs-player.netlify.app/jw-player?url=https://crichd.johirxofficial.workers.dev/live/ptvpk.m3u8"
+  },
+  {
     "name": "PSL 2026",
     "image": "https://i.postimg.cc/43Zpp2gX/20260427-195733.jpg",
     "url": "https://rs-player.netlify.app/jw-player?url=https://cdn1.ctgiptv.com/willow-cricket/index.m3u8"
