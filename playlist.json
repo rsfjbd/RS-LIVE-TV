@@ -35,6 +35,11 @@
     "url": "https://rs-player.netlify.app/jw-player?url=https://proxy.torongoplus.workers.dev/?url=https://mtlivestream.com/hls/asian/ytlive/index.m3u8"
   },
   {
+    "name": "Channel 1",
+    "image": "https://i.postimg.cc/1Rr59nxK/20260501-111550.jpg",
+    "url": "https://rs-player.netlify.app/jw-player?url=https://www.livetvpro.site/ch_one.m3u8"
+  },
+  {
     "name": "Atn News",
     "image": "https://i.postimg.cc/TwvMq4yd/20250602-071314.png",
     "url": "https://rs-player.netlify.app/jw-player?url=https://owrcovcrpy.gpcdn.net/bpk-tv/1706/output/index.m3u8"
