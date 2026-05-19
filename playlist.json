@@ -120,6 +120,26 @@
     "url": "https://rs-player.netlify.app/jw-player?url=https://edge2.roarzone.net:8447/roarzone/edge5/speed-sports-1/index.m3u8?token=f32d46d123dfc9ea47a7262898a5b7d1fc04a397-3e49591c0361a676860ecd4b081deb79-1779212124-1779201324"
   },
   {
+    "name": "Star Jalsha",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4bIqh7m8AlSK-6ZrLOT2p1DFCZcJOZ9w-MxIRUnIQoehma1PkrDQ9B48&s=10",
+    "url": "https://rs-player.netlify.app/jw-player?url=https://tvsen3.aynaott.com/n64PH4YL/index.m3u8"
+  },
+  {
+    "name": "ZEE Bangla",
+    "image": "https://www.dodawards.in/wp-content/uploads/2024/03/001.png",
+    "url": "https://rs-player.netlify.app/jw-player?url=https://tvsen3.aynaott.com/n64PH4YL/index.m3u8"
+  },
+  {
+    "name": "Enterr10",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ9l3CospNm55oEn0V7oc67JGpBwq5_qKfK5Xtnhfpm0WQXls0kfvpNyc&s=10",
+    "url": "https://rs-player.netlify.app/jw-player?url=https://live-bangla.akamaized.net/liveabr/playlist.m3u8"
+  },
+  {
+    "name": "Bangla Plus",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJh-9D8ZXy5M4MAouOuPBYXZXOUlCmZ8DrwXTxLUBRp1oP3Lu2-_OGTLk&s=10",
+    "url": "https://rs-player.netlify.app/jw-player?url=https://live-stream.utkalbongo.com/hls/livebanglatvstream.m3u8"
+  }
+  {
     "name": "GAZI TV",
     "image": "https://tvassets.roarzone.net/images/gazi-tv.png",
     "url": "https://rs-player.netlify.app/jw-player?url=https://edge2.roarzone.net:8447/roarzone/edge5/gazi-tv/index.m3u8?token=1317569d519fefc166d8f1786a1055e5ac3a80c7-ca75e350f2f28c10808feb9be439454b-1779212122-1779201322"
