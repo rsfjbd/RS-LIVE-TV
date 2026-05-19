@@ -1,8 +1,8 @@
 [
   {
-    "name": "T SPORTS",
-    "image": "https://tvassets.roarzone.net/images/102.png",
-    "url": "https://rs-player.netlify.app/jw-player?url=https://edge2.roarzone.net:8447/roarzone/edge2/tsports/index.m3u8?token=2c354b73d098973cc18c98eff9715ba00fff6d79-5498c2c759bd4dd1d81755bde2630540-1779212123-1779201323"
+    "name": "T SPORTS HD",
+    "image": "https://tvassets.roarzone.net/images/t-sports-hd.png",
+    "url": "https://rs-player.netlify.app/jw-player?url=https://edge2.roarzone.net:8447/roarzone/edge5/t-sports-hd/index.m3u8?token=d02a1e18cd6f2e69e70494d6f8e0ec68b2e02d56-df31458ed0245a67514b01803787417c-1779212123-1779201323"
   },
   {
     "name": "SONY ESPN",
@@ -33,11 +33,6 @@
     "name": "CRICKET GOLD",
     "image": "https://tvassets.roarzone.net/images/cricket-gold.png",
     "url": "https://rs-player.netlify.app/jw-player?url=https://edge2.roarzone.net:8447/roarzone/edge5/cricket-gold/index.m3u8?token=a4e4cff12545bfd8bc54cda239dd5de46b92abaa-7c2bb9c4efb57b0da9542ed53dfb6156-1779212123-1779201323"
-  },
-  {
-    "name": "T SPORTS HD",
-    "image": "https://tvassets.roarzone.net/images/t-sports-hd.png",
-    "url": "https://rs-player.netlify.app/jw-player?url=https://edge2.roarzone.net:8447/roarzone/edge5/t-sports-hd/index.m3u8?token=d02a1e18cd6f2e69e70494d6f8e0ec68b2e02d56-df31458ed0245a67514b01803787417c-1779212123-1779201323"
   },
   {
     "name": "WILLOW TV",
