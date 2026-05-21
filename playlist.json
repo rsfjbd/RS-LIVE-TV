@@ -262,7 +262,7 @@
   {
     "name": "MOVIE BANGLA TV",
     "image": "https://tvassets.roarzone.net/images/86.png",
-    "url": "https://rs-player.netlify.app/jw-player?url=https://edge2.roarzone.net:8447/roarzone/edge3/movie_bangla/index.m3u8?token=9f12393962961942d7da35c3a620fe0ae54e8094-cd227392d020d1a8a9b4f6c1de829555-1779212125-1779201325"
+    "url": "https://rs-player.netlify.app/jw-player?url=https://bestiptv.bestiptv-pro.workers.dev/?url=http://alvetv.com/moviebanglatv/8080/index.m3u8"
   },
   {
     "name": "MY TV",
@@ -317,7 +317,7 @@
   {
     "name": "SANGEET BANGLA",
     "image": "https://tvassets.roarzone.net/images/sangeet-bangla.png",
-    "url": "https://rs-player.netlify.app/jw-player?url=https://edge2.roarzone.net:8447/roarzone/edge5/sangeet-bangla/index.m3u8?token=4f09e459e42be40b06844c89d34bd48d9ee9213e-4581e0ed0f17c406640fbb871470ddd0-1779212124-1779201324"
+    "url": "https://rs-player.netlify.app/jw-player?url=https://cdn-4.pishow.tv/live/1143/master.m3u8"
   },
   {
     "name": "WEATHER CHANNEL",
@@ -792,7 +792,7 @@
   {
     "name": "MUSIC INDIA",
     "image": "https://tvassets.roarzone.net/images/music-india.png",
-    "url": "https://rs-player.netlify.app/jw-player?url=https://edge2.roarzone.net:8447/roarzone/edge5/music-india/index.m3u8?token=d75766b77a7f830b7cc19f87e3042f21f3a28a85-742c0518b12bde4a7033469cb9ea01a9-1779212125-1779201325"
+    "url": "https://rs-player.netlify.app/jw-player?url=https://cdn-2.pishow.tv/live/226/master.m3u8"
   },
   {
     "name": "SONY MAX 2",
